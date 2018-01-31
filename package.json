@@ -1,27 +1,27 @@
 {
-    "name": "io.scanbot.example.sdk.cordova",
-    "version": "1.1.0",
-    "displayName": "Scanbot SDK Example Cordova",
-    "cordova": {
-        "platforms": [
-            "android",
-            "ios"
-        ],
-        "plugins": {
-            "cordova-plugin-scanbot-sdk": {
-                "CAMERA_USAGE_DESCRIPTION": "This example app needs access to the Camera to demonstrate document scanning features of the Scanbot SDK.",
-                "PHOTOLIBRARY_USAGE_DESCRIPTION": "This example app needs access to the Photo Library to demonstrate image operation features of the Scanbot SDK."
-            },
-            "cordova-plugin-whitelist": {},
-            "cordova-plugin-file": {}
-        }
-    },
-    "dependencies": {
-        "cordova-android": "~6.2.1",
-        "cordova-ios": "~4.3.1",
-        "cordova-plugin-compat": "^1.1.0",
-        "cordova-plugin-file": "^4.3.3",
-        "cordova-plugin-scanbot-sdk": "~1.2.5",
-        "cordova-plugin-whitelist": "1"
+  "name": "io.scanbot.example.sdk.cordova",
+  "version": "1.1.1",
+  "displayName": "Scanbot SDK Example Cordova",
+  "cordova": {
+    "platforms": [
+      "android",
+      "ios"
+    ],
+    "plugins": {
+      "cordova-plugin-scanbot-sdk": {
+        "CAMERA_USAGE_DESCRIPTION": "This example app needs access to the Camera to demonstrate document scanning features of the Scanbot SDK.",
+        "PHOTOLIBRARY_USAGE_DESCRIPTION": "This example app needs access to the Photo Library to demonstrate image operation features of the Scanbot SDK."
+      },
+      "cordova-plugin-whitelist": {},
+      "cordova-plugin-file": {}
     }
+  },
+  "dependencies": {
+    "cordova-android": "~6.2.1",
+    "cordova-ios": "~4.3.1",
+    "cordova-plugin-compat": "^1.1.0",
+    "cordova-plugin-file": "^4.3.3",
+    "cordova-plugin-scanbot-sdk": "^1.5.0",
+    "cordova-plugin-whitelist": "1"
+  }
 }

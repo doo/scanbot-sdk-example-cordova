@@ -25,10 +25,10 @@
     <preference name="Orientation" value="portrait" />
     <engine name="android" spec="~6.2.1" />
     <engine name="ios" spec="~4.3.1" />
-    <plugin name="cordova-plugin-file" spec="^4.3.3" />
-    <plugin name="cordova-plugin-scanbot-sdk" spec="~1.2.5">
+    <plugin name="cordova-plugin-scanbot-sdk" spec="^1.5.0">
         <variable name="CAMERA_USAGE_DESCRIPTION" value="This example app needs access to the Camera to demonstrate document scanning features of the Scanbot SDK." />
         <variable name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="This example app needs access to the Photo Library to demonstrate image operation features of the Scanbot SDK." />
     </plugin>
     <plugin name="cordova-plugin-whitelist" spec="1" />
+    <plugin name="cordova-plugin-file" spec="^4.3.3" />
 </widget>

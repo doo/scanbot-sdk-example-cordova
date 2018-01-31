@@ -46,6 +46,9 @@ function initExampleUi() {
   document.getElementById('perform-ocr-button').onclick = function(e) {
     performOcr();
   };
+  document.getElementById('start-barcode-scanner-ui-button').onclick = function(e) {
+    startBarcodeScannerUi();
+  };
 }
 
 function initScanbotSdk() {
@@ -189,7 +192,6 @@ function hasDocumentImage() {
   return true;
 }
 
-
 function setCurrentDocumentImage(sdkResult) {
   if (hasField(sdkResult, 'imageFileUri') && sdkResult.imageFileUri) {
     currentDocumentImage.imageFileUri = sdkResult.imageFileUri;
@@ -204,4 +206,25 @@ function setCurrentDocumentImage(sdkResult) {
 
 function hasField(obj, fieldName) {
   return Object.keys(obj).indexOf(fieldName) != -1;
+}
+
+function startBarcodeScannerUi() {
+  var options = {
+    flashEnabled: false,
+    playTone: true,
+    vibrate: true,
+    //barcodeFormats: [ScanbotSdk.BarcodeFormat.EAN_8, ScanbotSdk.BarcodeFormat.EAN_13, ScanbotSdk.BarcodeFormat.CODE_128]
+  };
+
+  ScanbotSdk.isLicenseValid(function(result) {
+    if (result.isLicenseValid) {
+      ScanbotSdkUi.startBarcodeScanner(function(result) {
+        console.log('Barcode scanner result: ' + JSON.stringify(result));
+        alert('Barcode format: ' + result.barcodeFormat + '\n\n' + 'Value: ' + result.textValue);
+      }, sdkErrorCallback, options);
+    }
+    else {
+      alert("Scanbot SDK (trial) license has expired!");
+    }
+  }, sdkErrorCallback);
 }
