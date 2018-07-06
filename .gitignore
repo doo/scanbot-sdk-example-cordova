@@ -16,3 +16,4 @@ npm-debug.log
 # res
 resources/signing
 
+reinstall-dev-scanbot-plugin.sh
