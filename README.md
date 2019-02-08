@@ -1,4 +1,6 @@
-# Example App for Scanbot SDK Cordova Plugin
+# Recognize barcodes, MRZ, QR codes and more. Detect and scan any document with OCR.
+
+## Scanbot SDK example app for Cordova
 
 This example app shows how to integrate the Scanbot SDK Cordova Plugin, which is available as [npm package](https://www.npmjs.com/package/cordova-plugin-scanbot-sdk).
 
