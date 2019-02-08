@@ -10,7 +10,7 @@ The app demonstrates only a few features of the plugin. For more details please 
 ## What is Scanbot SDK?
 The Scanbot SDK brings scanning and document creation capabilities to your mobile apps. 
 It contains modules which are individually licensable as license packages. 
-For more details visit our website [https://scanbot.io/sdk.html](https://scanbot.io/sdk.html)
+For more details visit our website https://scanbot.io/sdk
 
 
 ## How to run this app
