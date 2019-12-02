@@ -29,6 +29,4 @@
         <variable name="CAMERA_USAGE_DESCRIPTION" value=" " />
         <variable name="PHOTOLIBRARY_USAGE_DESCRIPTION" value=" " />
     </plugin>
-    <engine name="android" spec="^6.4.0" />
-    <engine name="ios" spec="^4.4.0" />
 </widget>
