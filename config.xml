@@ -25,8 +25,4 @@
     <preference name="Orientation" value="portrait" />
     <plugin name="cordova-plugin-whitelist" spec="1" />
     <plugin name="cordova-plugin-file" spec="^4.3.3" />
-    <plugin name="cordova-plugin-scanbot-sdk" spec="^1.7.1">
-        <variable name="CAMERA_USAGE_DESCRIPTION" value=" " />
-        <variable name="PHOTOLIBRARY_USAGE_DESCRIPTION" value=" " />
-    </plugin>
 </widget>
