@@ -51,7 +51,7 @@ Then you can start the App in Xcode or via `cordova run ios`.
 
 ## Please note
 
-This example app doesn't contain a Scanbot SDK license key and runs in a **trial mode (trial period of 1 minute)**!  
+This example app does not contain a Scanbot SDK license key and runs in a **trial mode (trial period of 1 minute)**!  
 After the trial period has expired the Scanbot SDK functions will stop working.
 The UI parts (like Camera UI) will stop working or may be terminated.
 You have to restart the app to get another trial period.
